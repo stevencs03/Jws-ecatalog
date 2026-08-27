@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JWS Golden International | Indonesian Food Products</title>
+<meta name="description" content="JWS Golden International — Indonesian food products including Durian Baked Bun and Shrimp Crackers.">
+<style>
+:root{
+  --gold:#d9aa43;--gold2:#f0cc70;--bg:#080808;--card:#111;
+  --muted:#cfcfcf;--line:#6f5421;--cream:#f7f0df
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:radial-gradient(circle at top,#18130a 0,#080808 42%,#050505 100%);
+  color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",Arial,sans-serif;line-height:1.55
+}
+.wrap{max-width:1120px;margin:auto;padding:22px 16px 48px}
+.hero{text-align:center;padding:22px 10px 24px}
+.logo{width:108px;height:108px;object-fit:cover;border-radius:14px;margin-bottom:10px}
+.brand{font-family:Georgia,serif;color:var(--gold2);font-size:31px;letter-spacing:4px}
+.sub{color:#ddd;margin-top:5px;font-size:14px}
+.hero h1{font-family:Georgia,"Noto Serif SC",serif;font-size:39px;line-height:1.1;margin:22px 0 8px;color:var(--gold2)}
+.hero p{color:var(--muted);margin:0 auto;max-width:760px;font-size:14px}
+.section-title{
+  display:flex;align-items:center;gap:12px;margin:28px 0 15px;font-size:23px;
+  color:var(--gold2);font-family:Georgia,"Noto Serif SC",serif
+}
+.section-title:after{content:"";height:1px;background:#8e6b2b;flex:1}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{
+  background:linear-gradient(180deg,#151515,#0c0c0c);border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;box-shadow:0 8px 30px #000
+}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#090909;display:block}
+.card .body{padding:16px}
+.cn{font-size:22px;color:var(--gold2);font-weight:700}
+.en{font-size:14px;color:#aaa;margin-top:1px;letter-spacing:.6px}
+.desc{color:#ddd;font-size:14px;margin:9px 0 0}
+.tag{display:inline-block;border:1px solid var(--line);color:var(--gold2);padding:4px 9px;border-radius:99px;font-size:12px;margin-top:10px}
+.ingredients{
+  margin-top:14px;padding:12px 13px;border-radius:11px;
+  background:#0b0b0b;border:1px solid #3f3016
+}
+.ingredients strong{display:block;color:var(--gold2);font-size:12px;letter-spacing:1px;margin-bottom:5px}
+.ingredients p{margin:0;color:#d8d8d8;font-size:12.5px;line-height:1.55}
+.feature{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:0;overflow:hidden;
+  background:linear-gradient(135deg,#15120c,#0d0d0d);border:1px solid var(--line);
+  border-radius:18px;box-shadow:0 10px 35px #000
+}
+.feature img{width:100%;height:100%;min-height:430px;object-fit:cover;display:block}
+.feature-body{padding:28px 26px;display:flex;flex-direction:column;justify-content:center}
+.kicker{display:inline-block;width:max-content;border:1px solid var(--gold);color:var(--gold2);padding:5px 10px;border-radius:99px;font-size:11px;letter-spacing:1.2px;margin-bottom:13px}
+.feature h2{font-family:Georgia,serif;font-size:35px;line-height:1.05;color:var(--gold2);margin:0}
+.feature h3{font-size:18px;margin:7px 0 13px;color:#fff;letter-spacing:1px}
+.feature p{color:#ddd;font-size:14px;margin:0 0 16px}
+.feature .ingredients{background:#101010}
+.about{background:#0f0f0f;border:1px solid #5f491e;border-radius:16px;padding:20px;margin-top:22px}
+.about h2{margin:0 0 8px;color:var(--gold2);font-family:Georgia,"Noto Serif SC",serif}
+.about p{margin:6px 0;color:#ddd}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.contact a{color:#fff;text-decoration:none}
+.contact .item{background:#111;border:1px solid #4f3c18;border-radius:12px;padding:14px}
+.label{color:var(--gold2);font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.value{margin-top:3px;font-size:16px;word-break:break-word}
+.cta{text-align:center;margin-top:25px;padding:18px;border:1px solid var(--gold);border-radius:14px;background:linear-gradient(90deg,#17120a,#0d0d0d,#17120a)}
+.cta strong{color:var(--gold2);font-size:18px}
+.note{text-align:center;color:#888;font-size:11px;margin:14px auto 0;max-width:900px}
+.footer{text-align:center;color:#888;font-size:12px;margin-top:22px}
+@media(max-width:800px){
+  .products{grid-template-columns:1fr}
+  .feature{grid-template-columns:1fr}
+  .feature img{min-height:300px;max-height:430px}
+}
+@media(max-width:560px){
+  .contact{grid-template-columns:1fr}
+  .hero h1{font-size:32px}.brand{font-size:25px}
+  .feature-body{padding:22px 18px}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<section class="hero">
+  <img class="logo" src="./images/jws-logo.jpeg" alt="JWS Golden International logo">
+  <div class="brand">JWS GOLDEN INTERNATIONAL</div>
+  <div class="sub">印度尼西亚优质产品 · 出口与国际贸易</div>
+  <h1>INDONESIAN FOOD PRODUCTS</h1>
+  <p>精选印度尼西亚食品，为国际市场提供稳定供应、专业采购、质量控制与出口服务。<br><span style="color:#aaa">Selected Indonesian food products with reliable supply, professional sourcing, quality control and export support.</span></p>
+</section>
+
+<section>
+  <div class="section-title">主打产品 · Featured Product</div>
+  <div class="feature" style="grid-template-columns:1fr 1fr;">
+    <div class="feature-body" style="order:1;">
+      <span class="kicker">JWS SIGNATURE PRODUCT</span>
+      <h2>SHRIMP<br>CRACKERS</h2>
+      <h3>虾片系列 · Shrimp Crackers</h3>
+      <p><strong>English:</strong> Crispy, flavorful shrimp crackers made with selected ingredients and developed for international markets. Available in Original, Seaweed, and Tom Yum flavors.</p>
+      <p><strong>中文:</strong> 选用优质原料制成的酥脆虾片，口感香脆、风味丰富，专为国际市场提供。现有原味、海苔味和冬阴功味三种口味。</p>
+      <div class="ingredients">
+        <strong>AVAILABLE FLAVORS · 产品口味</strong>
+        <p>Original · 原味 &nbsp; | &nbsp; Seaweed · 海苔味 &nbsp; | &nbsp; Tom Yum · 冬阴功味</p>
+      </div>
+    </div>
+    <img src="./images/shrimp-original.jpeg" alt="JWS Shrimp Crackers Original" style="order:2;">
+  </div>
+</section>
+
+<section>
+  <div class="section-title">虾片系列 · Shrimp Crackers</div>
+  <div class="products">
+
+    <article class="card">
+      <img src="./images/shrimp-original.jpeg" alt="Awankthok Shrimp Crackers Original">
+      <div class="body">
+        <div class="cn">原味虾片</div>
+        <div class="en">ORIGINAL</div>
+        <p class="desc"><strong>English:</strong> Classic shrimp crackers with a savory shrimp aroma and a light, crispy texture.</p>
+        <p class="desc"><strong>中文:</strong> 经典原味虾片，虾香浓郁，口感轻盈酥脆，适合日常休闲食用。</p>
+        <span class="tag">净含量 85 g</span>
+        <div class="ingredients">
+          <strong>INGREDIENTS · 配料</strong>
+          <p>Tapioca Flour, Shrimp, Palm Oil, Sugar, Salt, Wheat Flour, Maltodextrin, Egg, Dextrose, Dextrin, Garlic, Hydrolyzed Vegetable Protein, Flavor Enhancer (Monosodium Glutamate), Anti-Caking Agent.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="./images/shrimp-seaweed.jpeg" alt="Awankthok Shrimp Crackers Seaweed">
+      <div class="body">
+        <div class="cn">海苔味虾片</div>
+        <div class="en">SEAWEED FLAVOR</div>
+        <p class="desc"><strong>English:</strong> Crispy shrimp crackers combined with a delicate seaweed seasoning for a fresh and savory taste.</p>
+        <p class="desc"><strong>中文:</strong> 酥脆虾片搭配清香海苔调味，鲜香爽口，带来独特的海洋风味。</p>
+        <span class="tag">净含量 85 g</span>
+        <div class="ingredients">
+          <strong>INGREDIENTS · 配料</strong>
+          <p>Tapioca Flour, Shrimp, Palm Oil, Sugar, Salt, Wheat Flour, Maltodextrin, Egg, Dextrose, Dextrin, Garlic, Hydrolyzed Vegetable Protein, Flavor Enhancer (Monosodium Glutamate), Anti-Caking Agent, Seaweed Seasoning.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="./images/shrimp-tomyum.jpeg" alt="Awankthok Shrimp Crackers Tom Yum">
+      <div class="body">
+        <div class="cn">冬阴功味虾片</div>
+        <div class="en">TOM YUM FLAVOR</div>
+        <p class="desc"><strong>English:</strong> A bold Tom Yum-inspired flavor with a savory, aromatic and mildly spicy profile.</p>
+        <p class="desc"><strong>中文:</strong> 经典冬阴功风味，酸辣鲜香、香气浓郁，适合喜欢特色口味的消费者。</p>
+        <span class="tag">净含量 85 g</span>
+        <div class="ingredients">
+          <strong>INGREDIENTS · 配料</strong>
+          <p>Tapioca Flour, Shrimp, Palm Oil, Sugar, Salt, Wheat Flour, Maltodextrin, Egg, Dextrose, Dextrin, Garlic, Hydrolyzed Vegetable Protein, Flavor Enhancer (Monosodium Glutamate), Anti-Caking Agent, Tom Yum Seasoning.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section>
+  <div class="section-title">其他产品 · Other Products</div>
+  <article class="feature">
+    <img src="./images/durian-baked-bun.jpeg" alt="Durian Baked Bun">
+    <div class="feature-body">
+      <span class="kicker">OTHER PRODUCT</span>
+      <h2>DURIAN<br>BAKED BUN</h2>
+      <h3>榴莲烘焙包 · Durian Baked Bun</h3>
+      <p><strong>English:</strong> A soft and golden baked bun with rich durian filling, combining a tender texture with the distinctive aroma of tropical durian.</p>
+      <p><strong>中文:</strong> 松软金黄的榴莲烘焙包，搭配浓郁榴莲馅料，将柔软口感与热带榴莲独特香气完美结合。</p>
+      <div class="ingredients">
+        <strong>INGREDIENTS · 配料</strong>
+        <p>Durian, Wheat Flour, Butter, Egg, Milk Powder.</p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section>
+  <div class="section-title">联系我们 · Contact</div>
+  <div class="contact">
+    <div class="item"><div class="label">WeChat · 主要微信</div><div class="value">+86 155 7796 0146</div></div>
+    <div class="item"><div class="label">WhatsApp · 主要联系方式</div><div class="value"><a href="https://wa.me/6281178708889">+62 811 7870 8889</a></div></div>
+    <div class="item"><div class="label">WeChat</div><div class="value">+86 156 0233 4950</div></div>
+    <div class="item"><div class="label">Email</div><div class="value"><a href="mailto:jwsgoldeninternational@gmail.com">jwsgoldeninternational@gmail.com</a></div></div>
+  </div>
+</section>
+
+<div class="cta">
+  <strong>欢迎与我们洽谈合作 · Welcome to discuss business with us</strong><br>
+  <span style="color:#bbb">Indonesian Food Products · OEM/ODM · Export Partnership</span>
+</div>
+
+<div class="note">Ingredients are presented based on the product information supplied for this catalog.</div>
+<div class="footer">JWS GOLDEN INTERNATIONAL · From Indonesia to the World</div>
+</main>
+</body>
+</html>
